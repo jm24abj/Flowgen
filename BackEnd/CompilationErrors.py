@@ -14,7 +14,7 @@ class UnexpectedTokenError(CompilationError):
     def __str__(self):
         return f"Expected {self.missingToken} on line {self.lineNumber}"
 
-class GrammerViolationError(CompilationError):
+class GrammarViolationError(CompilationError):
     def __init__(self, lineNumber,tokenGiven,expectedTokens):
         super().__init__(lineNumber)
         self.tokenGiven = tokenGiven
