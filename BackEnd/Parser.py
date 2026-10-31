@@ -12,6 +12,7 @@ class Parser:
         self.token = None
         self.tokenPosition = 0
         self.ast = []
+        self.errorLog = []
 
     def parse(self):
         while self.tokenPosition < len(self.tokens):
@@ -42,7 +43,10 @@ class Parser:
                 self.statement()
 
     def func(self):
-        pass
+        self.token = self.next()
+
+        if not self.token:
+            return
 
     def decision(self):
         pass
