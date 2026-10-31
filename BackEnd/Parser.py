@@ -22,6 +22,9 @@ class Parser:
     def program(self):
         self.token = self.next()
 
+        if not self.token:
+            return
+
         match self.token.tokenType:
             case Helpers.TokenType.FUNCTION:
                 self.func()
