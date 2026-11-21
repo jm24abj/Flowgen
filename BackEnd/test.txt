@@ -1,7 +1,9 @@
 title = test flowchart;
 
-if (shoes in good condition) {
-    put on shoes;
-} else {
-    buy new shoes;
+function : yo {
+    if (shoes in good condition) {
+        put on shoes;
+    } else {
+        buy new shoes;
+    }
 }

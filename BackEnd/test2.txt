@@ -1,0 +1,50 @@
+title = StudentManagement;
+
+StudentName;
+
+IO = DisplayWelcome;
+
+function : CalculateGrade {
+    Grade;
+    if (GradeA) {
+        IO = DisplayA;
+    }
+    elif (GradeB) {
+        IO = DisplayB;
+    }
+    else {
+        IO = DisplayFail;
+    }
+}
+
+if (StudentRegistered) {
+    IO = RegistrationSuccessful;
+}
+elif (StudentPending) {
+    IO = RegistrationPending;
+}
+else {
+    IO = RegistrationFailed;
+}
+
+while (StudentActive) {
+    IO = DisplayStudent;
+}
+
+for (i; Condition; Increment) {
+    IO = DisplayNextStudent;
+}
+
+options {
+    ViewStudents {
+        IO = DisplayStudents;
+    }
+    AddStudent {
+        IO = AddNewStudent;
+    }
+    RemoveStudent {
+        IO = DeleteStudent;
+    }
+}
+
+IO = DisplayGoodbye;
