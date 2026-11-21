@@ -16,10 +16,11 @@ class TokenType(Enum):
     ELIF = "elif"
     ELSE = "else"
     WHILE = "while"
-    BRANCH = "branch"
+    OPTIONS = "options"
     LABEL = ":" 
-    LOOP = "loop"
+    FOR = "for"
     FUNCTION = "function"
+    IO = "IO" 
 
 class FlowchartSymbol(Enum):
     PROGRAM = "PROGRAM"
