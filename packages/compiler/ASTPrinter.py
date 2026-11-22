@@ -1,5 +1,3 @@
-print("AstPrinter.py loaded")
-
 class AstPrinter:
 
     def printAst(self, ast, indent=0):

@@ -19,4 +19,4 @@ def compile(file_path):
     printer.printAst(ast)
 
 if __name__ == "__main__":
-    compile("Tests/test.txt")
+    compile("tests/src/valid/test.txt")

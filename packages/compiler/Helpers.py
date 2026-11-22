@@ -1,7 +1,5 @@
 from enum import Enum
 
-print("Helpers.py loaded")
-
 class TokenType(Enum):
     TITLE = "title" 
     WHITESPACE = ""
@@ -21,15 +19,6 @@ class TokenType(Enum):
     FOR = "for"
     FUNCTION = "function"
     IO = "IO" 
-
-class FlowchartSymbol(Enum):
-    PROGRAM = "PROGRAM"
-    START = "START"
-    END = "END"
-    PROCESS = "PROCESS"
-    DECISION = "DECISION"
-    INPUT_OUTPUT = "IO"
-    CONNECTOR = "CONNECTOR"
 
 class Token:
 
