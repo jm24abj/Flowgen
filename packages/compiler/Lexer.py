@@ -1,6 +1,4 @@
-import Helpers
-
-print("Lexer.py loaded")
+import Helpers as Helpers
 
 def lexer(source_code):
 

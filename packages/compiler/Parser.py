@@ -1,6 +1,4 @@
-import Helpers
-
-print("Parser.py loaded")
+import Helpers as Helpers
 
 class ParserError(Exception):
     pass

@@ -1,8 +1,6 @@
-import Lexer
-import Parser
-import ASTPrinter
-
-print("Compiler.py loaded")
+import Lexer as Lexer
+import Parser as Parser
+import ASTPrinter as ASTPrinter
 
 def compile(file_path):
 
@@ -21,4 +19,4 @@ def compile(file_path):
     printer.printAst(ast)
 
 if __name__ == "__main__":
-    compile("BackEnd/test.txt")
+    compile("Tests/test.txt")
