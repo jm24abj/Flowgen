@@ -1,5 +1,6 @@
 import Lexer
 import Parser
+import ASTPrinter
 
 print("Compiler.py loaded")
 
@@ -16,5 +17,8 @@ def compile(file_path):
     tokens = Lexer.lexer(sourceCode)
     ast = Parser.Parser(tokens).parse()
 
+    printer = ASTPrinter.AstPrinter()
+    printer.printAst(ast)
+
 if __name__ == "__main__":
-    compile("BackEnd/test2.txt")
+    compile("BackEnd/test.txt")
