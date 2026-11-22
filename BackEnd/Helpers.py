@@ -3,7 +3,7 @@ from enum import Enum
 print("Helpers.py loaded")
 
 class TokenType(Enum):
-    TITLE = "title" # OPTIONAL EXPORT TITLE FOR FLOWCHART
+    TITLE = "title" 
     WHITESPACE = ""
     STATEMENT = "Statement"
     SEMICOLON = ";"

@@ -17,4 +17,4 @@ def compile(file_path):
     ast = Parser.Parser(tokens).parse()
 
 if __name__ == "__main__":
-    compile("BackEnd/test.txt")
+    compile("BackEnd/test2.txt")

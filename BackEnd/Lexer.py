@@ -54,16 +54,18 @@ def determineTokenType(token, lineNumber): # helps multi character tokens like "
         return Helpers.Token(Helpers.TokenType.ELSE, lineNumber)
     elif token == "while":
         return Helpers.Token(Helpers.TokenType.WHILE, lineNumber)
-    elif token == "branch":
-        return Helpers.Token(Helpers.TokenType.BRANCH, lineNumber)
+    elif token == "options":
+        return Helpers.Token(Helpers.TokenType.OPTIONS, lineNumber)
     elif token == ":":
         return Helpers.Token(Helpers.TokenType.LABEL, lineNumber)
-    elif token == "loop":
-        return Helpers.Token(Helpers.TokenType.LOOP, lineNumber)
+    elif token == "for":
+        return Helpers.Token(Helpers.TokenType.FOR, lineNumber)
     elif token == "function":
         return Helpers.Token(Helpers.TokenType.FUNCTION, lineNumber)
     elif token == "title":
         return Helpers.Token(Helpers.TokenType.TITLE, lineNumber)
+    elif token == "IO":
+        return Helpers.Token(Helpers.TokenType.IO, lineNumber)
     elif token == "":
         return Helpers.Token(Helpers.TokenType.WHITESPACE, lineNumber)
     else:
