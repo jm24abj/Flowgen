@@ -1,0 +1,6 @@
+if (StudentRegistered)
+    IO = RegistrationSuccessful;
+}
+else {
+    IO = RegistrationFailed;
+}
