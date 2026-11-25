@@ -1,0 +1,4 @@
+title = MyProgram;
+
+StudentName
+IO = DisplayWelcome;

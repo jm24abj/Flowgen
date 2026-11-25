@@ -1,0 +1,6 @@
+if () {
+    IO = RegistrationSuccessful;
+}
+else {
+    IO = RegistrationFailed;
+}
